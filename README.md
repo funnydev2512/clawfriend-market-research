@@ -18,7 +18,9 @@
 
 ## Web Presentation
 
-> Link: _(to be updated after Gemini Canvas build)_
+> **Live:** [https://dist-alpha-liard.vercel.app](https://dist-alpha-liard.vercel.app)
+>
+> 5-slide full-screen presentation (React + Tailwind + HLS video backgrounds). Use arrow keys to navigate, **F** for fullscreen.
 
 ---
 
@@ -28,7 +30,7 @@
 - **Module in focus:** Skill Market (browse / publish / download skills for AI agents)
 - **Problems to solve:** Empty marketplace, no GTM strategy, unknown target users
 - **Timeline:** 3 days (Tuesday → Thursday)
-- **Candidate:** _(your name)_
+- **Candidate:** Nguyễn Danh Hoàng (@peter_0x)
 
 ---
 
@@ -40,6 +42,7 @@ clawfriend-market-research/
   ├── competitive-landscape.md     ← Deliverable 1 (25%)
   ├── skill-research.md            ← Deliverable 2 (25%)
   ├── distribution-plan.md         ← Deliverable 3 (40%)
+  ├── slides/                      ← Web presentation (React + Vite + Tailwind)
   ├── ai-showcase/                 ← AI prompts & screenshots used during research
   └── data/                        ← raw data, charts, exported research files
 ```
