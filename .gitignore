@@ -1,0 +1,9 @@
+# Ignore docs folder
+docs/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
