@@ -236,6 +236,47 @@
 
 ---
 
+## Holder-Gated Value Analysis — Giá trị ở nhiều mức share price
+
+BGK sẽ hỏi: *"Holder-gated chỉ rẻ ở early ($0.04/share). Khi share = $10 hay $50 thì sao?"*
+
+| Supply | Share Price (BNB) | ~USD ($600/BNB) | So sánh với Nansen $99/mo | Breakeven vs Nansen |
+|--------|-------------------|-----------------|--------------------------|---------------------|
+| 1 (early) | 0.0000625 | **$0.04** | Rẻ hơn 2,400x | Instant |
+| 10 | 0.0063 | **$3.75** | Rẻ hơn 26x | Instant |
+| 25 | 0.039 | **$23.44** | Rẻ hơn 4.2x | Instant |
+| 50 | 0.156 | **$93.75** | Tương đương ~1 tháng Nansen | 1 tháng |
+| 100 | 0.625 | **$375** | Đắt hơn 3.8x so với 1 tháng | 3.8 tháng |
+| 200 | 2.5 | **$1,500** | Đắt hơn 15x so với 1 tháng | ~15 tháng |
+
+**Key insight — Tại sao holder-gated VẪN có giá trị ở supply cao:**
+
+1. **Share là asset, không phải expense.** Khác subscription ($99/mo burned mỗi tháng), share có thể **bán lại** trên bonding curve. Nếu agent tiếp tục grow, share price tăng → user vừa dùng skill vừa có capital appreciation. Nansen subscription = sunk cost.
+
+2. **Multi-skill access.** 1 share unlock TẤT CẢ private skills của agent đó, không chỉ 1 skill. Nếu agent publish 5 premium skills, chi phí per-skill giảm 5x.
+
+3. **Creator incentive tự điều chỉnh.** Khi share price cao, creator có incentive tạo MORE premium skills để justify valuation. Nếu skill quality giảm → holders bán → price giảm → market tự correct.
+
+4. **Giới hạn tự nhiên.** Bonding curve quadratic (price = supply²/16000) tạo natural ceiling. Không phải mọi agent sẽ đạt supply 200. Majority agents sẽ ở supply 10–50 = sweet spot $3.75–$93.75, vẫn competitive với subscription model.
+
+**Kết luận:** Holder-gated model hoạt động tốt nhất ở supply 1–50 (rẻ hơn subscription). Ở supply cao, giá trị chuyển từ "rẻ hơn alternative" sang "asset có thể bán lại + multi-skill access + capital appreciation potential". Đây là **investment model, không phải subscription model** — và đó chính là sự khác biệt.
+
+---
+
+## API Rate Limit Risk & Mitigation
+
+| Skill | API chính | Rate limit | Risk | Mitigation |
+|-------|-----------|------------|------|------------|
+| Whale Tracker | Etherscan/BSCScan API | Free: 5 calls/sec | Medium — cần monitor 500 wallets | Batch requests + WebSocket cho real-time. Upgrade API key ($199/mo Etherscan Pro) khi user base > 1,000 |
+| Rug Pull Detector | GoPlus Security API | Free: 30 calls/phút | High — mỗi token scan = 1 call, new tokens mỗi phút | Implement caching layer (Redis): cache kết quả scan 5 phút. Priority queue: scan popular tokens trước. GoPlus có enterprise plan nếu cần scale |
+| Yield Optimizer | DefiLlama API | Free, no explicit limit | Low — API public, community-maintained | Cache yield data mỗi 15 phút (APY không thay đổi per-second). Fallback: scrape trực tiếp từ protocol subgraphs |
+| Sentiment Analyst | Twitter/X API | Free: 500K tweets/mo; Basic $100/mo: 10K tweets/mo via search | High — sentiment cần volume data lớn | Start với curated KOL list (500 accounts) thay vì full firehose. Supplement bằng Reddit API (free, generous limits) + CoinGecko social data |
+| Airdrop Scanner | Etherscan multi-chain APIs | Free: 5 calls/sec per chain | Medium — multi-chain scan = multiplied calls | Queue system: scan 1 wallet across chains sequentially. Cache criteria database locally (update weekly). Batch on-chain queries |
+
+**Budget dự phòng cho API:** $200–$500/tháng khi user base > 500 (Etherscan Pro + Twitter Basic). Đã tính vào operational cost, không ảnh hưởng $10K marketing budget.
+
+---
+
 ## Tổng kết Skill Research
 
 **Skill có PMF mạnh nhất:**

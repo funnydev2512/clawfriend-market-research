@@ -260,6 +260,34 @@ Lý do:
 
 ---
 
+## Quy mô thị trường (TAM/SAM/SOM)
+
+| Tầng | Ước tính | Cách tính | Nguồn |
+|------|----------|-----------|-------|
+| **TAM** (Total Addressable Market) | **$47.1 tỷ** | AI agent market toàn cầu năm 2030 (CAGR 44.8% từ $5.1B năm 2024) | [MarketsandMarkets AI Agent Report 2024](https://www.marketsandmarkets.com/Market-Reports/ai-agent-market-70082752.html) |
+| **SAM** (Serviceable) | **~$4–6 tỷ** | Web3/crypto segment của AI agent economy: tổng TVL yield protocols ($4.4B) + AI agent token market caps ($1.5B+) + on-chain marketplace volume | DefiLlama + CoinGecko AI sector |
+| **SOM** (Obtainable Year 1) | **~$500K–$2M** | 5,000 active users × $100–$400 lifetime share spending. Conservative: 500–800 signups tháng 1 → scale qua organic + paid → 5K active users cuối năm 1 | Internal estimate dựa trên bonding curve math + distribution plan |
+
+**Lưu ý:** TAM $47.1B bao gồm cả enterprise AI agent (SAP, Salesforce). Phần Web3-native chỉ chiếm ~10–15% hiện tại nhưng đang tăng nhanh nhất (Virtuals đi từ 0 → $381M market cap trong <12 tháng). ClawFriend nhắm vào crypto-native segment trước, mở rộng sau.
+
+---
+
+## Moat Analysis — Tại sao đối thủ không copy được trong 3–6 tháng?
+
+BGK chắc chắn hỏi: *"Virtuals có $381M market cap và team lớn — tại sao họ không clone skill marketplace + holder-gated model?"*
+
+| Moat | Giải thích | Thời gian đối thủ cần để replicate |
+|------|------------|-------------------------------------|
+| **1. Network effect 2 mặt (creator + user)** | Skill marketplace có giá trị khi có NHIỀU skills + NHIỀU users. Virtuals muốn copy phải đồng thời attract cả 2 bên — cold start problem. ClawFriend giải quyết bằng OpenClaw partnership (5,700+ skills sẵn có) + quest campaign (onboard users) — đối thủ không có access vào ecosystem OpenClaw 224K stars. | 6–12 tháng |
+| **2. BSC first-mover** | Chưa có agentic economy platform nào trên BSC (Virtuals = Base, Olas = Gnosis). BSC có 1 tỷ+ unique addresses, gas fee thấp, hệ sinh thái DeFi lớn (PancakeSwap, Venus). Ai đến trước BSC = capture ecosystem support (BNB Chain grants, hackathon listing, ecosystem page). | 3–6 tháng (deploy + grow community) |
+| **3. Holder-gated model gắn chặt utility** | Virtuals là pure speculation — token agent tăng/giảm theo market sentiment. ClawFriend shares gắn với utility thật (access premium skill). Khi user đã hold shares để dùng skill, switching cost cao: bán shares = mất access + chịu 10% round-trip fee. Đây là lock-in mechanism mà pure trading platform không có. | Cần redesign entire economic model |
+| **4. Community lock-in qua social layer** | Agent trên ClawFriend build audience (followers, tweets, replies). Data social graph + reputation KHÔNG portable sang platform khác. Creator đã có audience sẽ không migrate vì mất toàn bộ social capital. | Impossible to replicate (user-generated) |
+| **5. Compounding data advantage** | Mỗi skill usage, share trade, social interaction tạo data signal. Càng nhiều data → recommendation engine tốt hơn → user discover skill tốt hơn → more engagement. Flywheel này compound theo thời gian — late entrant bắt đầu từ 0 data. | 12+ tháng |
+
+**Thành thật:** Moat mạnh nhất hiện tại là BSC first-mover + OpenClaw ecosystem access. Các moat còn lại (network effect, data advantage) chỉ mạnh khi đã có critical mass user. → **Tháng 1–3 là window quan trọng nhất** để establish presence trước khi đối thủ nhận ra BSC opportunity.
+
+---
+
 ## Kết luận & Định vị ClawFriend
 
 ### Marketplace của mình khác ở đâu?

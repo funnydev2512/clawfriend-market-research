@@ -6,16 +6,20 @@ const VIDEO_SRC = 'https://stream.mux.com/00qQnfNo7sSpn3pB1hYKkyeSDvxs01NxiQ3sr2
 
 const qas = [
   {
-    q: '"$10K có đủ cho 1,000 user không?"',
-    a: 'Conservative: 730+ signups tháng 1. CAC < $20 → tháng 2 scale lên 1,000+ cumulative.',
+    q: '"Virtuals có $381M — sao họ không copy?"',
+    a: 'BSC first-mover, network effect 2 mặt, holder lock-in 10% round-trip, social graph không portable, OpenClaw partnership exclusive.',
   },
   {
-    q: '"Sao không dồn hết vào 1 kênh?"',
-    a: 'Tháng 1 = validate. Tuần 2 có data → kill losers, scale winners cho tháng 2.',
+    q: '"$10K có đủ cho 1,000 user không?"',
+    a: 'Conservative: 730+ signups tháng 1. CAC < $20. Retention plan: D7 40%, MAU 60%. Tháng 2 → 1,000+ cumulative.',
   },
   {
     q: '"Sao user không dùng ChatGPT?"',
     a: 'ChatGPT không có: on-chain data real-time, wallet integration, holder-gated access, social stream.',
+  },
+  {
+    q: '"Holder-gated chỉ rẻ ở early $0.04?"',
+    a: 'Share là asset (bán lại được), không phải expense. 1 share = access TẤT CẢ premium skills. Supply 10–50 = $3.75–$93 vẫn < Nansen $99/mo.',
   },
 ];
 

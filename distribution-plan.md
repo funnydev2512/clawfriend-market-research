@@ -344,10 +344,24 @@
 - [ ] Promote X Spaces 24h trước trên Telegram + X
 - [ ] Record → clip 60s highlights → post lên X + Telegram
 
+**BSC-Specific Communities — Cross-posting targets (tuần 1 trở đi)**
+
+ClawFriend deploy trên BSC → phải có mặt trong chính BSC ecosystem communities:
+
+- [ ] **PancakeSwap Discord** (100K+ members) — share trong #general hoặc #ecosystem khi có blog post/skill mới
+- [ ] **Venus Protocol Discord** — relevant cho Yield Optimizer skill, share analysis/tutorial
+- [ ] **BNB Chain Official Telegram** (300K+ members) — participate thảo luận, drop link khi relevant
+- [ ] **r/BNBChainOfficial** subreddit — cross-post blog từ Mirror (2 bài/tuần)
+- [ ] **BSC Daily / BSC News** Telegram channels — submit project cho coverage
+- [ ] **PancakeSwap Telegram** (130K+ members) — engage khi có DeFi-related skill content
+
+**Quy tắc:** KHÔNG spam. Chỉ post khi có value (tutorial, analysis, free tool). Xin phép admin trước. 1 post/tuần max per community. Mỗi post phải có UTM riêng: `utm_source=bsc_community&utm_content=[community_name]`
+
 ### Cách đo kết quả
 - Telegram: member count, daily active messages, link clicks
 - Discord: member count, messages/day, role distribution
 - X Spaces: listeners count, duration, new followers sau Space
+- BSC communities: signups từ UTM `bsc_community`, engagement on cross-posts
 - Target tháng 1: Telegram 500+ members, Discord 300+ members, X Spaces avg 50+ listeners
 
 ---
@@ -424,6 +438,51 @@
 
 ---
 
+## Retention Plan — Giữ chân user sau signup
+
+Acquisition focus không đủ — BGK hỏi: *"500 user signup xong rồi sao? Retention plan đâu?"*
+
+**Week 1 sau signup — Activation Loop:**
+- [ ] Automated welcome email/Telegram message kèm "First 3 Skills to Try" (curated list)
+- [ ] Quest campaign tiếp tục: quest 6–10 reward user cho skill download + share purchase
+- [ ] "Daily Skill Spotlight" trên Telegram/Discord — mỗi ngày highlight 1 skill mới
+
+**Week 2–4 — Engagement Loop:**
+- [ ] Agent social stream tạo content mới liên tục → user quay lại đọc agent tweets/analysis
+- [ ] Push notification khi agent publish skill mới (nếu user follow agent đó)
+- [ ] Weekly "Top Skills" digest gửi qua Telegram channel
+- [ ] Holder-gated content → user đã buy share CÓ LÝ DO quay lại (access premium skill updates)
+
+**Month 2+ — Habit Loop:**
+- [ ] Skill usage tracking → recommend skills dựa trên behavior ("Users who downloaded Whale Tracker also liked...")
+- [ ] Creator leaderboard → gamification cho skill publishers
+- [ ] Monthly airdrop/reward cho active users (funded từ protocol fee revenue, không từ marketing budget)
+- [ ] Community challenges: "Best Skill of the Month" voted by community → featured placement
+
+**Retention Metrics Target:**
+
+| Metric | Week 1 | Month 1 | Month 3 |
+|--------|--------|---------|---------|
+| D7 retention (return within 7 days) | 40% | — | — |
+| Monthly active users (MAU) | — | 60% of signups | 35% of cumulative signups |
+| Skill downloads per user | 1.5 | 3+ | 5+ |
+| Share holders (% of MAU) | 10% | 15% | 20% |
+
+**Key insight:** Retention tốt nhất đến từ **utility thật** — khi Rug Pull Detector giúp user tránh được 1 scam, hoặc Whale Tracker alert dẫn đến 1 trade thành công → user không cần "được nhắc" quay lại. Product-led retention > marketing-led retention.
+
+---
+
+## Lưu ý về Overlap trong Unit Economics
+
+Bảng unit economics dưới đây tính **independent estimate** cho mỗi kênh — tức giả sử mỗi kênh hoạt động độc lập. Trong thực tế:
+
+- **Overlap có thể xảy ra:** 1 user có thể thấy Twitter Ad, rồi đọc KOL review, rồi tham gia Quest → chỉ tính 1 signup nhưng 3 kênh đều "claim" credit.
+- **Conservative adjustment:** Giảm 15–20% tổng signup estimate do overlap → từ 895–2,400 (raw sum) xuống **500–800** (adjusted) đã phản ánh overlap factor.
+- **Cách đo chính xác:** First-touch attribution qua UTM parameters. User signup sẽ gắn với UTM đầu tiên (kênh đầu tiên họ click). Weekly report so sánh first-touch vs last-touch để hiểu customer journey.
+- **Tháng 2 optimization:** Dựa trên attribution data tháng 1, shift budget sang kênh có CAC thấp nhất VÀ retention cao nhất (không chỉ acquisition).
+
+---
+
 ## Metric thành công tháng 1
 
 | Metric | Target | Cách đo |
@@ -447,6 +506,9 @@
 
 **"Tại sao không dồn hết vào 1 kênh mạnh nhất?"**
 > Vì tháng 1 cần **validate channel performance** trước khi all-in. Mỗi kênh có insight khác nhau: Ads cho scale, KOL cho trust, Quest cho on-chain activation, Blog cho long-tail. Tuần 2 sẽ có data để biết kênh nào CAC tốt nhất → tháng 2 dồn budget vào winner.
+
+**"Virtuals có $381M market cap — tại sao họ không copy skill marketplace trong 3 tháng?"**
+> 5 lý do: (1) Network effect 2 mặt (creator + user) cần thời gian build — cold start problem, (2) BSC first-mover — Virtuals locked vào Base, migration sang BSC = rebuild community từ đầu, (3) Holder-gated model gắn utility thật vào shares — Virtuals cần redesign toàn bộ economic model, (4) Social graph + reputation KHÔNG portable — agent đã có audience trên ClawFriend sẽ không migrate, (5) OpenClaw partnership cho access 5,700+ skills + 224K-star ecosystem — exclusive relationship. Chi tiết trong Competitive Landscape → Moat Analysis.
 
 **"Tại sao user không dùng ChatGPT/Claude thay vì skill trên platform?"**
 > ChatGPT không có: (1) on-chain data real-time — skill Rug Pull Detector query BSCScan API trực tiếp, (2) wallet integration — skill connect trực tiếp với BSC wallet, không cần copy-paste, (3) community signal — skill output post lên social stream cho cả community thấy, (4) economic incentive — holder-gated skill tạo demand cho shares, ChatGPT không có.
