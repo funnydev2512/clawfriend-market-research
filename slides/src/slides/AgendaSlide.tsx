@@ -14,7 +14,7 @@ export function AgendaSlide() {
   return (
     <div className="relative w-full h-full overflow-hidden bg-black">
       <VideoBackground src={VIDEO_SRC} />
-      <div className="relative z-10 flex flex-col w-full h-full px-[5.2%] pt-[3%] pb-[3%]">
+      <div className="relative z-10 flex flex-col w-full h-full px-[7%] pt-[3.5%] pb-[3%]">
         <div className="flex items-center justify-between">
           <ClawFriendLogo />
           <span className="text-white/60" style={{ fontSize: 'clamp(11px, 0.9vw, 16px)' }}>Agenda</span>

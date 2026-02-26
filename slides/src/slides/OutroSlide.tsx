@@ -27,7 +27,7 @@ export function OutroSlide() {
   return (
     <div className="relative w-full h-full overflow-hidden bg-black">
       <VideoBackground src={VIDEO_SRC} />
-      <div className="relative z-10 flex flex-col w-full h-full px-[5.2%] pt-[3%] pb-[3%]">
+      <div className="relative z-10 flex flex-col w-full h-full px-[7%] pt-[3.5%] pb-[3%]">
         <div className="flex items-center justify-between">
           <ClawFriendLogo />
           <span className="text-white/60" style={{ fontSize: 'clamp(11px, 0.9vw, 16px)' }}>Q&A</span>
@@ -68,7 +68,7 @@ export function OutroSlide() {
             <div className="flex flex-col items-center mt-[8%]" style={{ gap: 'clamp(8px, 1vw, 16px)' }}>
               <div className="flex items-center" style={{ gap: '8px' }}>
                 <div className="rounded-full" style={{ width: '6px', height: '6px', background: '#D2FF55' }} />
-                <span className="text-white/70" style={{ fontSize: 'clamp(12px, 1vw, 17px)' }}>Nguyễn Danh Hoàng</span>
+                <span className="text-white/70" style={{ fontSize: 'clamp(12px, 1vw, 17px)' }}>Peter</span>
               </div>
               <div className="flex items-center" style={{ gap: '8px' }}>
                 <div className="rounded-full" style={{ width: '6px', height: '6px', background: '#55FFD2' }} />

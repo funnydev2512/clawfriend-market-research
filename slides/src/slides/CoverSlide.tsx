@@ -8,7 +8,7 @@ export function CoverSlide() {
     <div className="relative w-full h-full overflow-hidden bg-black">
       <VideoBackground src={VIDEO_SRC} />
 
-      <div className="relative z-10 flex flex-col w-full h-full px-[5.2%] pt-[3%] pb-[3%]">
+      <div className="relative z-10 flex flex-col w-full h-full px-[7%] pt-[3.5%] pb-[3%]">
         {/* Header */}
         <div className="flex items-center justify-between">
           <ClawFriendLogo />
@@ -49,7 +49,7 @@ export function CoverSlide() {
               marginTop: '2%',
             }}
           >
-            By Nguyễn Danh Hoàng
+            By Peter
           </p>
         </div>
 
